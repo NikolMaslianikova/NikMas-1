@@ -22,13 +22,13 @@
 4. **Крок 4**: Запустіть сервер або ваш додаток:
 
     ```bash
-    gunicorn -w 4 -b 127.0.0.1:5000 main:app
+    gunicorn -w 4 -b 127.0.0.1:5000 wsgi:app
     ```
 
     Або:
 
     ```bash
-    waitress-serve --listen=127.0.0.1:5000 main:app
+    waitress-serve --listen=127.0.0.1:5000 wsgi:app
     ```
 
 5. **Крок 5**: Відкрийте веб-браузер та перейдіть за посиланням:
